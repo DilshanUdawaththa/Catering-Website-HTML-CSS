@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catering Web</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Start header section -->
     <section class="header">
       <nav>
-        <a href="index.html">Gourmet au Catering</a>
-        <div class="nav-links">
+        <a href="index.html" id="nav-heading">Gourmet au Catering</a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -20,6 +27,7 @@
           </ul>
         </div>
         <!-- .nav-links -->
+        <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="heading">
         <h1>Le Catering</h1>
@@ -160,5 +168,6 @@
       <p>Powered by <a href="#">Dilshan Udawaththa</a></p>
     </section>
     <!-- End footer section -->
+    <script src="./main.js"></script>
   </body>
 </html>
